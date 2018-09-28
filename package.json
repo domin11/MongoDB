@@ -1,0 +1,24 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "mongoose": "^5.2.18"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domin11/MongoDB.git"
+  },
+  "author": "domin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domin11/MongoDB/issues"
+  },
+  "homepage": "https://github.com/domin11/MongoDB#readme"
+}
