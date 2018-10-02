@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const express = require('express');
+const app = express();
 const Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
@@ -158,3 +160,11 @@ Promise.all([kenny.save(), mark.save(), benny.save()])
   .then(findKennyAndDelete)
   .then(findBennyAndRemove)
   .catch(console.log.bind(console))
+
+app.get('/', function (req, res) {
+    res.send('Everything is fine');
+});
+
+app.use(function (req, res, next) {
+    res.status(404).send('Something goes wrong')
+});
