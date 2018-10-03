@@ -172,5 +172,5 @@ app.use(function (req, res, next) {
 var server = app.listen(3000, 'localhost', function() {
   var host = server.address().address;
   var port = server.address().port;
-  console.log('MongoDB nasłuchuje na http://' + host + ':' + port);
+  console.log('MongoDB na http://' + host + ':' + port);
 });
